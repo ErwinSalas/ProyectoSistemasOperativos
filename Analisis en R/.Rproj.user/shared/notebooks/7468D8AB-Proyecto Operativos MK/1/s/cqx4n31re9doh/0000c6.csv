@@ -1,0 +1,3 @@
+"0","datal<-read.csv(""dataset.csv"", header=TRUE,sep = "","")"
+"0","energyP1<-datal[1:203 ,3]"
+"0","plot(energyP1,type=""l"")"

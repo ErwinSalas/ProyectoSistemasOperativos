@@ -1,0 +1,55 @@
+---
+title: "Proyecto Operativos"
+output: html_document
+---
+
+```{r}
+datal<-read.csv("dataset.csv", header=TRUE,sep = ",")
+energyP1<-datal[1:203 ,3]
+plot(energyP1,type="l")
+# Test de Normalidad
+#ESta prueba se basa en toma la columna 1 y restarla con la 2 y asi sucesivamente para obtener un valor de normalidad
+plot(diff(energyP1),type="l")
+#Grafica de histograma
+hist(diff(energyP1),prob=T,ylim=c(0,0.0015),xlim=c(-1000,1000),col="red")
+#Teorica: Es el comportamiento esperado de la distribucion la cual se debe contrastar con la distribucion normal de el dataset (se representa sobre el histograma con una linea negra).
+lines(density(diff(energyP1)),lwd=2)
+#Se calcula la media de la energia producida
+mu<-mean(diff(energyP1))
+mu
+#Se calcula la desviacion estandar de la energia
+sigma<-sd(diff(energyP1))
+sigma
+x<-seq(-1000,1000,length=1000)
+x
+min(x)
+max(x)
+#Se calcula una distribucion normal basada en la media y desviacion estandar obtenida
+y<-dnorm(x,mu,sigma)
+#Dstribucion normal Representada por una linea de color azul
+lines(x,y,lwd=2,col="blue")
+#Serie de tiempo
+# energyP1ts<-ts(energyP1,start=c(2017,3),freq=365)
+# energyP1ts
+# s<-stl(energyP1ts,s.window="periodic")
+# plot(s)
+
+```
+
+## R Markdown
+
+
+
+```{r}
+
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.

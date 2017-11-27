@@ -1,0 +1,1 @@
+"0","hist(diff(energyP1),prob=T,ylim=c(0,0.0015),xlim=c(-1000,1000),col=""red"")"

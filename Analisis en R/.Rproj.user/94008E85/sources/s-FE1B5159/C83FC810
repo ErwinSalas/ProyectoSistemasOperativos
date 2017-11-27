@@ -1,0 +1,29 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1511760406758.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "C83FC810",
+    "lastKnownWriteTime" : 2459014175060536354,
+    "last_content_update" : 1511760406758,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "36BA74FA",
+        "caption" : "datal",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=datal&cache_key=36BA74FA",
+        "displayedObservations" : "6360",
+        "environment" : "",
+        "object" : "datal",
+        "preview" : "0",
+        "totalObservations" : "6360",
+        "variables" : "3"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}
